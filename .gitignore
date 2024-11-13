@@ -1,0 +1,26 @@
+
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+
+# Distribution / packaging
+.Python
+env/
+lib/
+lib64/
+
+
+
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+.env
+db.sqlite3
