@@ -5,6 +5,9 @@ This is a Django-based API for managing invoices and their associated details. T
 ## Project is deployed on Vercel
 ### URL: https://invoice-api-rouge.vercel.app/api/invoices/
 
+## Assumptions:
+1. `line_total` is passed in Invoice detail so assuming it is validated already, no validation on backend side
+
 ## Setup Instructions
 
 1. Clone the repository:
