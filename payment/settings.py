@@ -19,9 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 env = environ.Env()
-print("here is -- 1", env.str("DB_NAME"))
-print("here is -- 2", env.str("DB_USER"))
-print("here is -- 3", env.str("DB_HOST"))
 
 if not env.str('DB_HOST', default=None):
     print("Loading .env for local....")
