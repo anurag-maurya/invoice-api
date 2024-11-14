@@ -84,7 +84,7 @@ WSGI_APPLICATION = "payment.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DB_NAME = env('DB_NAME') or "verceldb"
+DB_NAME = env('DB_NAME',default=None) or "verceldb"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
