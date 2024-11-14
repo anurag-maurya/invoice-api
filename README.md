@@ -12,9 +12,18 @@ This is a Django-based API for managing invoices and their associated details. T
 3. Install dependencies
    `cd invoice-api`
    `pip install -r requirements.txt`
-4. Apply migrations
+4. Create a `.env` file in root directory of project
+5. Create a database in PostgreSQL and mention the details in `.env` file:
+     ```
+     DB_NAME=your_db_name
+     DB_USER=your_db_user
+     DB_PASSWORD=your_password
+     DB_HOST=your_host 
+     DB_PORT=port
+     ```
+7. Apply migrations
    `python manage.py migrate`
-5. Run the server
+8. Run the server
    `python manage.py runserver`
 
 ## API Endpoints
