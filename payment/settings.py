@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 
 if not env.str('DB_HOST', default=None):
+    print("Loading .env for local....")
     env_file = os.path.join(BASE_DIR, '.env')
     environ.Env.read_env(env_file)  # This will load from .env if exists locally
 
