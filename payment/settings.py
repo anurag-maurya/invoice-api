@@ -19,6 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 env = environ.Env()
+print("here is -- ", env.str("DB_NAME"))
 
 if not env.str('DB_HOST', default=None):
     print("Loading .env for local....")
