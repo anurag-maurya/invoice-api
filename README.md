@@ -2,6 +2,9 @@
 
 This is a Django-based API for managing invoices and their associated details. The API allows users to create and update invoices along with multiple invoice details in a single request.
 
+## Project is deployed on Vercel
+### URL: https://invoice-api-rouge.vercel.app/api/invoices/
+
 ## Setup Instructions
 
 1. Clone the repository:
