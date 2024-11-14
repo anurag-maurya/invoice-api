@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "Building projects package.."
-python3.9 pip install -r requirements.txt
+python3.9 -m pip install --upgrade pip
+python3.9 -m pip install -r requirements.txt
 
 echo "migrating database..."
 python3.9 manage.py makemigrations --noinput
